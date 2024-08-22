@@ -1,0 +1,606 @@
+
+    /* General Styles */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+
+    body {
+      font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+     /** background: linear-gradient(45deg, white 60%, #3c17f4);
+    **/}
+    .navbars{
+  position: fixed;
+  width: 100%;
+  z-index: 999;
+}
+
+    a, a:hover {
+      text-decoration: none;
+    }
+
+    .top-bar {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 10px 25px;
+      background: #0a0a79;
+    }
+
+    .top-bar span, .top-bar a {
+      color: #fff;
+    }
+
+    .top-bar ul {
+      list-style: none;
+      display: flex;
+    }
+
+    .top-bar li {
+      margin: 0 10px;
+      font-size: 15px;
+    }
+
+    .top-bar li:hover a {
+      color: orange;
+    }
+
+    nav {
+      background: linear-gradient(45deg, white 60%, #f4de17);
+      padding: 10px 20px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      position: relative;
+       
+    }
+
+    nav a {
+      color: blue;
+      display: flex;
+      align-items: center;
+
+    }
+
+    nav a:hover {
+      color: orange;
+    }
+
+    .logo img {
+      width: 100px;
+    }
+
+    .menu {
+      list-style: none;
+      display: flex;
+      align-items: center;
+      transition: max-height 0.3s ease;
+      max-height: 1000px; /* initially large to show the menu */
+      
+    }
+
+    .menu li {
+      padding: 15px 10px;
+      font-size: 20px;
+      
+      
+    }
+
+    .menu li a ion-icon {
+      margin-right: 5px;
+    }
+
+    .toggle {
+      font-size: 30px;
+      position: absolute;
+      top: 15px;
+      right: 20px;
+      display: none;
+      cursor: pointer;
+    }
+
+
+    video {
+      display: block;
+      max-width: 100%;
+      object-fit: cover;
+      border-radius: 20px;
+      width:100%;
+    }
+
+    .typing {
+        max-width: 800px;
+        padding: 20px;
+    }
+
+    .type1 {
+        font-size: 3.5rem;
+        color: #0b2b4a;
+        margin-bottom: 20px;
+        font-weight: bold;
+        
+    }
+    
+
+    .type2 {
+        font-size: 1.5rem;
+        color: #0a0d66;
+        line-height: 1.6;
+    }
+
+    .highlight {
+        color: #ffcc00;
+    }
+
+    .services {
+      padding: 50px 20px;
+      text-align: center;
+      background: linear-gradient(270deg, #ff8a00, #e52e71, #2b32b2, #1488cc, #ff8a00); background-size: 1000% 1000%; animation: gradientAnimation 10s ease infinite;
+      border-radius: 20px;
+
+    /**  background: url('paint2.jpg') no-repeat center center/cover;
+      background: linear-gradient(45deg, #dbdbe0, #37a076);*/
+
+    }
+
+    .services h2 {
+      margin-bottom: 20px;
+      font-size: 2em;
+    }
+
+    .services .gallery-preview {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    @keyframes gradientAnimation {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
+  }
+  
+
+    .gallery-item {
+      text-align: center;
+      max-width: 150px;
+      margin: 10px 0;
+    }
+
+    .gallery-item img {
+      width: 100%;
+      height: auto;
+      border-radius: 50%;
+    }
+
+    .gallery-work {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      padding: 20px;
+      
+     }
+
+    .gallery-work-item {
+      text-align: center;
+      max-width: 300px;
+      border: 2px solid #caf507;
+      border-radius: 10px;
+      overflow: hidden;
+      margin: 10px;
+      flex: 1 1 auto;
+    }
+
+    .gallery-work-item img {
+      width: 100%;
+      height: auto;
+    }
+
+    .gallery-work-item p {
+      padding: 10px;
+      background: rgba(0, 0, 0, 0.5);
+      color: white;
+    }
+
+    .map-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 20px 0;
+      
+    }
+
+    .map-container iframe {
+      border-radius: 20px;
+      width: 80%;
+      height: 300px;
+      border: 0;
+      
+    }
+
+    .contact {
+      padding: 50px 20px;
+      text-align: center;
+       background: linear-gradient(45deg, rgb(123, 152, 67) 60%, hwb(179 80% 5%));
+       background-image: url(officenew.jpg);
+       border-radius: 20px;
+        background-repeat: no-repeat; 
+       background-size: cover; 
+       background-position: center;
+       background-attachment: fixed; 
+       min-height: 100vh;
+    }
+
+    .contact h2 {
+      margin-bottom: 20px;
+      font-size: 2em;
+      color: black;
+      font-weight: bold;
+      
+    }
+
+    .input-group {
+      margin-bottom: 15px;
+      text-align: left;
+      font-weight: bold;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      
+    }
+
+    .input-group label {
+      display: flex;
+      align-items: center;
+      font-size: 1.1em;
+      margin-bottom: 5px;
+      color: rgb(97, 91, 37);
+      
+    }
+
+    .input-group input, .input-group textarea {
+      width: 80%;
+      padding: 10px;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+      margin-bottom: 10px;
+    }
+
+    .input-group ion-icon {
+      margin-right: 5px;
+    }
+
+    .btn{
+      width:50%;
+     height: 40px;
+    margin-top: 20px;
+    border-radius: 50px;
+    border: none;
+    outline: none;
+    background: linear-gradient(45deg ,#4b4ab0,60% ,#f3db04);
+    font-size: 19px;
+    font-weight: 500;
+    color: #eee;
+    position: relative;
+    cursor: pointer;
+    z-index: 1;
+    overflow: hidden;
+    
+    
+}
+.btn::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0%;
+    height: 100%;
+    width: 00%;
+    background: linear-gradient(45deg ,#f4de17,60% ,#5614db);
+    transition: .5s ease;
+    z-index: -1;
+}
+.btn:hover{
+    color: #eee;
+}
+.btn:hover:before{
+width: 100%;
+}
+
+    .share-section {
+      background: linear-gradient(45deg, #0a0a79, #f4de17);
+      padding: 20px;
+      text-align: center;
+      color: white;
+    }
+
+    .share-section img {
+      width: 100px;
+      height: auto;
+    }
+
+    .share-section ion-icon {
+      font-size: 30px;
+      margin-left: 10px;
+      cursor: pointer;
+    }
+
+    .success-message {
+      color: green;
+      margin: 20px 0;
+    }
+/*.container {
+    padding: 20px;
+    text-align: left;
+}
+
+.contact-info p {
+    margin: 5px 0;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: flex-start;
+    gap: 15px;
+    margin-top: 15px;
+}
+*/
+   
+    .footer {
+      font-family: Arial, sans-serif;
+      padding: 40px 20px;
+      background-color: #1a1b4d;
+      color: white;
+      
+
+  }
+
+  .footer-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      max-width: 1200px;
+      margin: 0 auto;
+  }
+
+  /*.footer-section {
+      flex: 1 1 300px;
+      margin-bottom: 20px;
+      margin: 5px 0;
+
+  }*/
+
+  .footer-section h2,
+  .footer-section h3 {
+      color: #E8A623;
+  }
+
+  .footer-section p,
+  .footer-section a {
+      margin: 5px 0;
+      line-height: 1.6;
+  }
+
+  .footer-section a {
+      color: #E8A623;
+      text-decoration: none;
+  }
+
+  .footer-section a:hover {
+      text-decoration: underline;
+  }
+
+  .social-icons {
+      display: flex;
+      justify-content: flex-start;
+      gap: 15px;
+      margin-top: 15px;
+  }
+
+  .social-icons a {
+      color: white;
+      font-size: 24px;
+  }
+
+  .social-icons a:hover {
+      color: #E8A623;
+  }
+
+  .footer-bottom {
+      text-align: center;
+      margin-top: 20px;
+      font-size: 14px;
+  }
+
+  .footer-bottom p {
+      margin: 5px 0;
+  }
+
+  @media (max-width: 768px) {
+      .footer-container {
+          flex-direction: column;
+          align-items: center;
+      }
+
+      .footer-section {
+          margin-bottom: 30px;
+          text-align: center;
+      }
+
+      .social-icons {
+          justify-content: center;
+      }
+  }
+
+    @media screen and (max-width: 768px) {
+      nav {
+        display: block;
+        padding: 15px 20px;
+      }
+      .menu {
+        display: none;
+        flex-direction: column;
+        max-height: 0;
+        overflow: hidden;
+      }
+      .toggle {
+        display: block;
+        
+      }
+      .menu.active {
+        display: flex;
+        max-height: 500px; /* allow room for the menu */
+      }
+      .gallery-work {
+        flex-direction: column;
+      }
+      .gallery-work-item {
+        max-width: 100%;
+      }
+    }
+    
+/* Gallery Section CSS */
+
+.gallery-container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 20px auto;
+}
+
+.dropdown {
+  margin: 20px 0;
+  border: 2px solid #0c49f0;
+  border-radius: 20px;
+  background-color: white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  position: relative;
+  transition: all 0.3s ease;
+}
+
+.dropdown-header {
+  padding: 15px;
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center;
+  border-radius: 20px;
+  background-color: #fbe517;
+  color: #333;
+  transition: background-color 0.3s;
+}
+
+.dropdown-header:hover {
+  background-color: #87ceeb;
+}
+
+.dropdown-content {
+  display: none;
+  padding: 20px;
+  background-color: #fff;
+}
+
+.dropdown.open .dropdown-content {
+  display: block;
+}
+
+.image-grid {
+  display: flex;
+  overflow-x: auto;
+  gap: 10px;
+}
+
+.image-grid img {
+  flex-shrink: 0;
+  width: 100px;
+  height: auto;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.image-grid img:hover {
+  transform: scale(1.1);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+@media screen and (max-width: 768px) {
+  .image-grid img {
+      width: 80px; /* Reduce image size on smaller screens */
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .image-grid img {
+      width: 60px; /* Further reduce image size on smartphones */
+  }
+}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1000; /* Sit on top */
+  padding-top: 60px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgba(0, 0, 0, 0.9); /* Black background with opacity */
+}
+
+/* Modal Content (Image) */
+.modal-content {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 1000px; /* Adjust max width */
+  height: auto;
+  max-height: 80vh; /* Ensure the image doesn't exceed the screen height */
+  object-fit: contain; /* Preserve aspect ratio */
+}
+
+/* Caption of Modal Image */
+#caption {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+  text-align: center;
+  color: #ccc;
+  padding: 10px 0;
+  height: auto;
+}
+
+/* Add Animation */
+.modal-content, #caption {
+  animation-name: zoom;
+  animation-duration: 0.6s;
+}
+
+@keyframes zoom {
+  from {transform: scale(0)} 
+  to {transform: scale(1)}
+}
+
+/* The Close Button */
+.close {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: #f1f1f1;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+a{
+  color: #E8A623;
+}
